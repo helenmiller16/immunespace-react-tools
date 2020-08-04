@@ -2,6 +2,7 @@
   "name": "immunespace-react-tools",
   "version": "1.0.0",
   "description": "ImmuneSpace React tools",
+  "main": "dist/main.js",
   "scripts": {
     "build": "webpack --mode=production",
     "test": "cross-env NODE_ENV=test jest",
