@@ -11,7 +11,7 @@ module.exports = {
         TYPESCRIPT: [ '.jsx', '.js', '.tsx', '.ts' ]
     },
     loaders: {
-        STYLE_LOADERS: [
+        rules: [
             {
                 test: /\.css$/,
                 use: [

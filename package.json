@@ -2,33 +2,11 @@
   "name": "immunespace-react-tools",
   "version": "1.0.0",
   "description": "ImmuneSpace React tools",
-  "main": "dist/main.js",
   "scripts": {
-    "build": "npm run clean && better-npm-run build:prod",
-    "build-prod": "npm run build",
-    "clean": "better-npm-run clean",
+    "build": "webpack --mode=production",
     "test": "cross-env NODE_ENV=test jest",
     "storybook": "start-storybook",
-    "build:prod": "webpack -p",
-    "start": "node server.js",
-    "dev": "webpack-dev-server"
-  },
-  "betterScripts": {
-    "build:watch": {
-      "command": "webpack-dev-server --config webpack/dev.config.js",
-      "env": {
-        "NODE_ENV": "development"
-      }
-    },
-    "build:prod": {
-      "command": "webpack --config webpack/prod.config.js --progress --profile --colors",
-      "env": {
-        "NODE_ENV": "production"
-      }
-    },
-    "clean": {
-      "command": "rimraf resources/web/DataFinder/gen && rimraf resources/views/*.*"
-    }
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -52,8 +30,7 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
-    "typescript": "^3.7.5"
+    "react-scripts": "^3.4.1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -65,12 +42,12 @@
   "devDependencies": {
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "better-npm-run": "0.1.1",
     "clean-webpack-plugin": "^3.0.0",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "sass-loader": "^9.0.2",
     "ts-loader": "6.0.2",
+    "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.0"

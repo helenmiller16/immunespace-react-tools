@@ -6,11 +6,12 @@
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
-      "types": ["jest"], // don't implicitly include any @types, only those included via import
+      "types": ["jest"], 
       "resolveJsonModule": true
     },
     "exclude": [
-      "dist"
+      "dist",
+      "node_modules"
     ]
   }
 
