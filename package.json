@@ -31,7 +31,7 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -42,7 +42,7 @@
   "homepage": "https://github.com/helenmiller16/immunespace-react-tools#readme",
   "devDependencies": {
     "@storybook/addon-knobs": "^5.3.19",
-    "@storybook/react": "^5.3.19",
+    "@storybook/react": "^7.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
